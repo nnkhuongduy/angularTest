@@ -1,0 +1,95 @@
+.titles {
+    position: sticky;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.pointer{
+    cursor: pointer;
+}
+.card{
+  margin-top: 150px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 3px 3px#888888;
+//   background-color: #F0FFFF; 
+//    background-color: #E6E6FA;
+   background-color:  #FFE4E1;
+}
+.item{
+    color: #2F4F4F;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.bg{
+    // background-color: #3CB371; 
+    //background-color: #DDA0DD;
+    background-color: #8B008B;
+    color: white;
+
+    
+}
+.btn{
+    //background-color: #F0FFFF;
+    background-color: #FFE4E1;
+    color: black;
+}
+
+// @media only screen and (max-width: 600px) {
+// .card{
+//     //width: auto;
+//     margin-top: 150px;
+//     border: 1px solid lightgray;
+//     border-radius: 10px;
+//     padding: 0px;
+//     box-shadow: 2px 3px 3px#888888;
+//     background-color: #F0FFFF;	
+//   }
+//   .item{
+//     font-size: 18px;
+//     font-weight: 400;
+//     text-align: center;
+//   }
+
+//  .titles {
+//         position: sticky;
+//         font-size: 20px;
+//         font-weight: 500;
+//         text-align: center;
+//   }
+//  }
+
+//  @media only screen and (max-width: 920px) {
+//     .card{
+//        // width: auto;
+//         margin-top: 150px;
+//         border: 1px solid lightgray;
+//         border-radius: 10px;
+//         padding: 0px;
+//         box-shadow: 2px 3px 3px#888888;
+//         background-color: #F0FFFF;	
+//       }
+//       .item{
+//         font-size: 18px;
+//         font-weight: 400;
+//         text-align: center;
+//       }
+    
+//      .titles {
+//             position: sticky;
+//             font-size: 20px;
+//             font-weight: 500;
+//             text-align: center;
+//       }     
+//  }

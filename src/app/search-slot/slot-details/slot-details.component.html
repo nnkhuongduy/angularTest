@@ -1,0 +1,66 @@
+<div class="row">
+    <div class=" col-md-6 card  mx-auto mb-3 titles" style="width: auto;">
+        <div class="card-header bg  border-info">SLOT DETAILS</div>
+        <div class="card-body item">
+
+            <div class="d-flex text-center">
+                <div class="col-md-6 col-6">
+                    <p>Slot Id</p>
+                </div>
+                <div class="col-md-6 col-6 pr-2">
+                     <!-- {{ filterArr[0].id }}  -->
+                </div>
+            </div>
+
+            <div class="d-flex text-center">
+                <div class="col-md-6 col-6 ">
+                    <p>Starts</p>
+                </div>
+                <div class="col-md-6  col-6 pr-2">
+                    <!-- {{ filterArr[0].attributes.starts | date: "hh:mm d/M/y" }} -->
+                </div>
+            </div>
+            <div class="d-flex text-center">
+                <div class="col-md-6 col-6">
+                    <p>Duration</p>
+                </div>
+                <div class="col-md-6 col-6 ml-2 pr-2">
+                    <!-- {{ getDuration(
+                    filterArr[0].attributes.starts,
+                    filterArr[0].attributes.ends
+                    ) }} -->
+                </div>
+            </div>
+
+            <div class="d-flex text-center">
+                <div class="col-md-6 col-6 ">
+                    <p>£</p>
+                </div>
+                <div class="col-md-6 col-6 pr-2">
+                    <!-- {{ filterArr[0].attributes.price | currency: "GBP"}} -->
+                </div>
+            </div>
+
+            <div class="d-flex text-center">
+                <div class="col-md-6 col-6 ">
+                    <p>$</p>
+                </div>
+                <div class="col-md-6 col-6 pr-2">
+                    <!-- {{ filterArr[0].attributes.price * 1.13 | currency: "EUR"}} -->
+                </div>
+            </div>
+
+            <div class="d-flex text-center">
+                <div class="col-md-6 ml-3 ">
+                    <p>Availabilities</p>
+                </div>
+                <div class="col-md-6 pr-2 ">
+                    <!-- {{ filterArr[0].attributes.availabilities}} -->
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer bg border-lightgray"><button type="button" class="btn btn-light pointer"
+                (click)="goBack()">OK</button></div>
+    </div>
+</div>
