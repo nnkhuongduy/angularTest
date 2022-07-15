@@ -8,7 +8,7 @@
                     <p>Slot Id</p>
                 </div>
                 <div class="col-md-6 col-6 pr-2">
-                     <!-- {{ filterArr[0].id }}  -->
+                      {{ result.id }}
                 </div>
             </div>
 
@@ -17,7 +17,7 @@
                     <p>Starts</p>
                 </div>
                 <div class="col-md-6  col-6 pr-2">
-                    <!-- {{ filterArr[0].attributes.starts | date: "hh:mm d/M/y" }} -->
+                    {{ result.attributes.starts | date: "hh:mm d/M/y" }}
                 </div>
             </div>
             <div class="d-flex text-center">
@@ -25,10 +25,7 @@
                     <p>Duration</p>
                 </div>
                 <div class="col-md-6 col-6 ml-2 pr-2">
-                    <!-- {{ getDuration(
-                    filterArr[0].attributes.starts,
-                    filterArr[0].attributes.ends
-                    ) }} -->
+                      {{ getDuration(result.attributes.starts, result.attributes.ends) }}
                 </div>
             </div>
 
@@ -37,7 +34,7 @@
                     <p>£</p>
                 </div>
                 <div class="col-md-6 col-6 pr-2">
-                    <!-- {{ filterArr[0].attributes.price | currency: "GBP"}} -->
+                      {{ result.attributes.price | currency: "GBP" }}
                 </div>
             </div>
 
@@ -46,7 +43,7 @@
                     <p>$</p>
                 </div>
                 <div class="col-md-6 col-6 pr-2">
-                    <!-- {{ filterArr[0].attributes.price * 1.13 | currency: "EUR"}} -->
+                    {{ (result.attributes.price | number) * 1.13 | currency: "EUR" }}
                 </div>
             </div>
 
@@ -55,7 +52,7 @@
                     <p>Availabilities</p>
                 </div>
                 <div class="col-md-6 pr-2 ">
-                    <!-- {{ filterArr[0].attributes.availabilities}} -->
+                    {{ result.attributes.availabilities }}
                 </div>
             </div>
         </div>

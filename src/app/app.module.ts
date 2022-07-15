@@ -18,7 +18,7 @@ import { searchSlotReducer } from "./store/slots/reducers/search-slot.reducer";
 import { SlotEffects } from "./store/slots/effects/search-slot.effects";
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
-import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
 import { RouterSerializer } from './store/routerSerializer';
 import { SlotDetailsComponent } from './search-slot/slot-details/slot-details.component';
 
@@ -41,7 +41,7 @@ import { SlotDetailsComponent } from './search-slot/slot-details/slot-details.co
         ReactiveFormsModule,
         NgxPaginationModule,
         NgbModule,
-        StoreModule.forRoot({slots: searchSlotReducer}),
+        StoreModule.forRoot({slots: searchSlotReducer, router: routerReducer}),
         //StoreModule.forRoot({reducers}),
         EffectsModule.forRoot([SlotEffects]),
         StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
